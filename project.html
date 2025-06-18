@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Mehtab's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(123, 123, 245);
+            font-size: 1.04rem;
+        }
+
+
+        /* Project Section */
+        .project-section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        .project-section h1 {
+            font-size: 2.8rem;
+            text-align: center;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .project-section h1 span {
+            color: #a74fff;
+        }
+
+        .subtext {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #ccc;
+            margin-bottom: 40px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .project-card {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 180px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #ffb74d;
+            text-align: center;
+        }
+
+        .project-card .buttons {
+            padding: 20px;
+        }
+
+        .project-card .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .project-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #ddd;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="left">Mehtab's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="chat.html">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="Contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Project Section -->
+    <section class="project-section">
+        <h1>My Recent <span>Works</span></h1>
+        <p class="subtext">Here are a few projects I've worked on recently.</p>
+
+        <div class="project-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="price-4.jpg" class="project-image" alt="Medwise">
+                <div class="project-title">Medwise</div>
+                <div class="project-description">
+                    Medwise, a comprehensive web application designed to enhance accessibility and convenience in
+                    healthcare. Medwise enables patients to book appointments with doctors, visit clinics, receive
+                    virtual prescriptions, and explore various healthcare services. The platform ensures seamless
+                    interaction between patients and healthcare providers through features such as real-time
+                    communication, secure access to medical records, and emergency assistance.
+                </div>
+                <div class="buttons">
+                    <button class="btn">Github</button>
+                    <button class="btn">Demo</button>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="main.jpg" class="project-image"
+                    alt="Task Manager">
+                <div class="project-title">Finance Tracker</div>
+                <div class="project-description">
+                    Finance Tracker is a full-stack web application designed to help individuals and small businesses manage their income, expenses, and overall financial health in an organized and efficient manner.
+
+                    The application allows users to track all their financial activities, categorize transactions, set monthly budgets, and view insightful visualizations such as pie charts, line graphs, and spending summaries. Users can input transactions manually or upload bank statements, which are then automatically parsed and categorized using intelligent matching algorithms.
+                </div>
+                <div class="buttons">
+                    <button class="btn">Github</button>
+                    <button class="btn">Demo</button>
+                </div>
+            </div>
+    </section>
+    <footer>
+        &copy; mehtabportfolio.com — All rights reserved.
+    </footer>
+
+</body>
+
+</html>

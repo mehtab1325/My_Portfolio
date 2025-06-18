@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Me</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css2?family=Poppins&display=swap' rel='stylesheet'>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: rgb(0, 0, 33) ;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgba(18, 18, 62, 0.9);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: all 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+      color: rgb(123, 123, 245);
+      font-size: 1.05rem;
+    }
+
+    .left {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Mehtab's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chat.html">About</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="Contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="min-h-screen flex items-center justify-center px-4 py-10">
+    <div class="max-w-xl w-full bg-white bg-opacity-10 backdrop-blur-md p-10 rounded-3xl shadow-2xl text-center border border-white border-opacity-20">
+
+      <h1 class="text-4xl font-bold text-white mb-4">Contact Me</h1>
+      <p class="text-gray-300 mb-6">I'd love to connect with you! Feel free to reach out anytime.</p>
+
+      <div class="space-y-4 text-lg text-gray-200">
+        <div class="flex items-center justify-center space-x-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V6a2 2 0 00-2-2H3a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+          <a href="mehtab6900285@gmail.com" class="hover:text-blue-400 transition">mehtab@Email</a>
+        </div>
+
+        <div class="flex items-center justify-center space-x-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h2l3.6 7.59-1.35 2.44A2 2 0 007 18h10a2 2 0 001.75-2.75l-1.35-2.44L19 5h2" />
+          </svg>
+          <a href="tel:+91536856" class="hover:text-green-400 transition">+91 9628080589</a>
+        </div>
+      </div>
+
+      <div class="mt-8 flex justify-center space-x-6">
+        <a href="https://www.linkedin.com/in/mehtab-ali-51564827b/" target="_blank" class="text-gray-300 hover:text-blue-400 transition">LinkedIn</a>
+        <a href="https://github.com/mehtab1325" target="_blank" class="text-gray-300 hover:text-gray-100 transition">GitHub</a>
+        <!-- Add more social links if needed -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>

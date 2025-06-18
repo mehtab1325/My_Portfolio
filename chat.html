@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Mehtab's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+    }
+
+    /* Navbar styles */
+    nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(123, 123, 245);
+            font-size: 1.04rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+
+    .content-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 40px;
+      gap: 40px;
+    }
+
+    .container {
+      flex: 1;
+    }
+
+    .coder-img {
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #007BFF;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .highlight {
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @media (max-width: 900px) {
+      .content-wrapper {
+        flex-direction: column;
+        text-align: left;
+      }
+
+      .coder-img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+        <div class="left">Mehtab's Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chat.html">About</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="Contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+  <!-- About Section -->
+  <div class="content-wrapper">
+    <div class="container">
+      <h1>Let's <span class="highlight">Talk About Myself</span></h1>
+      <p>
+        Hi, my name is <span class="highlight">Mehtab Ali</span>! I am a Computer Science Engineering student pursuing B.Tech with a specialization in Artificial Intelligence.
+      </p>
+      <p>
+        Solving problems is my passion, and I enjoy tackling real-world challenges through code and logic.
+      </p>
+      <p>
+        Currently, I am learning how to train AI models and exploring Machine Learning to create intelligent solutions.
+      </p>
+      <footer>
+        &copy; mehtabportfolio.com — All rights reserved.
+      </footer>
+    </div>
+
+    <!-- Coder Image -->
+    <img src="th.jpg" alt="Coder at work" class="coder-img">
+  </div>
+</body>
+</html>
